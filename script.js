@@ -41,3 +41,14 @@ form.addEventListener("submit", function(event) {
 
     form.reset();
 });
+
+var typed = new Typed("#typing-text", {
+    strings: [
+        "Aspiring Cybersecurity Student",
+        "Computer Programming Student",
+        "Working Toward a Career in Cybersecurity"
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+});
