@@ -82,6 +82,45 @@ footer {
     background-color: #ffffff;
 }
 
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#contact-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #bfc9d4;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+#contact-form button {
+    margin-top: 15px;
+    background-color: #1e3a5f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #28527a;
+}
+
+#form-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 @media (max-width: 600px) {
     nav ul li {
         display: block;
