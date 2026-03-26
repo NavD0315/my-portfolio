@@ -13,3 +13,31 @@ buttons.forEach(function(button) {
         }
     });
 });
+
+const form = document.getElementById("contact-form");
+const message = document.getElementById("form-message");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const userMessage = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || userMessage === "") {
+        message.textContent = "Please fill in all fields.";
+        message.style.color = "red";
+        return;
+    }
+
+    if (!email.includes("@") || !email.includes(".")) {
+        message.textContent = "Please enter a valid email address.";
+        message.style.color = "red";
+        return;
+    }
+
+    message.textContent = "Message sent successfully!";
+    message.style.color = "green";
+
+    form.reset();
+});
