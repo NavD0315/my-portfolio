@@ -45,14 +45,9 @@ form.addEventListener("submit", function(event) {
 });
 
 var typed = new Typed("#typing-text", {
-    strings: [
-        "Aspiring Cybersecurity Student",
-        "Computer Programming Student",
-        "Working Toward a Career in Cybersecurity"
-    ],
+    strings: ["Aspiring Cybersecurity Student"],
     typeSpeed: 50,
-    backSpeed: 30,
-    loop: true
+    showCursor: true
 });
 
 const navLinks = document.querySelectorAll("nav a");
