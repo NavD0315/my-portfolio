@@ -52,3 +52,18 @@ var typed = new Typed("#typing-text", {
     backSpeed: 30,
     loop: true
 });
+
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute("href");
+        const targetSection = document.querySelector(targetId);
+
+        targetSection.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
