@@ -279,6 +279,8 @@ button:hover {
     font-size: 16px;
     margin-top: 8px;
     margin-bottom: 12px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 @keyframes fadeIn {
