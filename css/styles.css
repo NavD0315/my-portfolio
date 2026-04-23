@@ -253,6 +253,14 @@ footer {
     background-color: #28527a;
 }
 
+button {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
 .project-details {
     display: none;
     margin-top: 12px;
