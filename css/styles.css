@@ -244,6 +244,14 @@ footer {
     color: #1e3a5f;
 }
 
+.project-card img {
+    width: 250px;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
 .toggle-btn {
     background-color: #1e3a5f;
     color: white;
