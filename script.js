@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 const buttons = document.querySelectorAll(".toggle-btn");
 
 buttons.forEach(function(button) {
@@ -72,4 +74,5 @@ const darkModeButton = document.getElementById("dark-mode-toggle");
 
 darkModeButton.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
+    });
 });
