@@ -67,3 +67,9 @@ navLinks.forEach(function(link) {
         });
     });
 });
+
+const darkModeButton = document.getElementById("dark-mode-toggle");
+
+darkModeButton.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
+});
